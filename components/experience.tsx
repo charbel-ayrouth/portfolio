@@ -11,7 +11,7 @@ import React from "react";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience");
+  const { ref, inView } = useSectionInView("Experience");
 
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
@@ -21,7 +21,7 @@ export default function Experience() {
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
-              visible={true}
+              visible={inView}
               contentStyle={{
                 background: "#f3f4f6",
                 boxShadow: "none",
