@@ -35,28 +35,30 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Web Developer Intern",
+    location: "BtekUp (Remote)",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      // "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I worked on a full-stack project for three months, utilizing React.js, SCSS, Node.js (Express), and MongoDB.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Summer 2022",
+  },
+  {
+    title: "Support Engineer",
+    location: "MobiMind (Beirut)",
+    description:
+      "I provided technical support to service providers. I used SQL Server Management Studio, Postman, Skype, and Outlook in my work.",
+    icon: React.createElement(CgWorkAlt),
+    date: "May 2023 - Present",
+  },
+  {
+    title: "Computer and Communication Engineer",
+    location: "Antonine University",
+    description:
+      "I graduated with a Bachelor of Engineering in Computer and Communications Engineering (CCE) with a focus in Software Engineering and Networks.",
+    //   "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Summer 2023",
   },
 ] as const;
 
@@ -94,14 +96,10 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
+  "Redux Toolkit",
   "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
+  "MongoDB",
+  "SQL",
   "Framer Motion",
 ] as const;

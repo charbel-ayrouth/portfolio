@@ -11,13 +11,13 @@ import React from "react";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function Experience() {
-  const { ref, inView } = useSectionInView("Experience");
+  const { ref, inView } = useSectionInView("Experience", 0.5);
 
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>My experience</SectionHeading>
 
-      <VerticalTimeline lineColor="">
+      <VerticalTimeline>
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
@@ -38,7 +38,7 @@ export default function Experience() {
                 background: "white",
                 fontSize: "1.5rem",
               }}>
-              <h3 className="font-semibold capitalize">{item.title}</h3>
+              <h3 className="font-bold capitalize">{item.title}</h3>
               <p className="font-normal !mt-0">{item.location}</p>
               <p className="!mt-1 !font-normal text-gray-700 ">
                 {item.description}
