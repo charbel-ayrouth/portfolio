@@ -10,38 +10,32 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28 space-y-3"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="about">
       <SectionHeading>About Me</SectionHeading>
 
-      <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
-
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        Hey there! I'm <span className="font-medium">Charbel Ayrouth</span>, a
+        recent{" "}
+        <span className="font-medium">software engineering graduate</span> who
+        jumped into a full-time tech job even before graduation. Although my job
+        doesn't involve coding, it's taught me a lot about technology and how to
+        solve problems.
+      </p>
+      <p>
+        In my free time,{" "}
+        <span className="italic">I love coding and hitting the gym</span>.
+        Coding is like a hobby to me—it's creative and fun. I enjoy figuring out
+        solutions to problems and making things work.
+      </p>
+      <p>
+        I'm on a journey to become a{" "}
+        <span className="underline">full-stack web developer</span>. I've got a
+        good start in support engineering, and now I'm excited to dive deeper
+        into coding and build cool stuff on the web.
       </p>
     </motion.section>
   );

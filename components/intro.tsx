@@ -58,9 +58,11 @@ export default function Intro() {
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}>
-        <span className="font-bold">I'm Charbel</span>, a{" "}
-        <span className="font-bold">full-stack developer</span> passionate about
-        building <span className="italic">websites</span>. with a focus on{" "}
+        <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-pink-500 to-blue-500">
+          I'm Charbel
+        </span>
+        , a <span className="font-bold">full-stack developer</span> passionate
+        about building <span className="italic">websites</span>. with a focus on{" "}
         <span className="underline">React</span>
       </motion.h1>
 
