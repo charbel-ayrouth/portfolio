@@ -64,24 +64,31 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "The 961 clone",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "I recreated 'The 961' news website using Next.js 14 and Tailwind CSS. By leveraging newsapi.org, I fetched real-time news articles for a seamless user experience.",
+    tags: ["Next.js", "Tailwind CSS", "NewsAPI"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "Proshop",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "I a full-stack MERN application serving as an ecommerce platform. Featuring a comprehensive shopping cart and Stripe integration for seamless payments,",
+    tags: ["React", "Redux Toolkit", "Stripe", "Node.js", "Express", "MongoDB"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "FYP Proposal Management System",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "Built with the MERN stack, this application streamlines the Final Year Project proposal process. It offer user role management and efficient communication tools to enhance collaboration among stakeholders",
+    tags: [
+      "React",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+    ],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
