@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -13,6 +13,8 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  github,
+  live,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -34,12 +36,20 @@ export default function Project({
       className="group mb-3 sm:mb-8 last:mb-0">
       <section className="bg-gray-100 max-w-[45rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative hover:bg-gray-200 transition sm:group-even:pl-8">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[60%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <h3 className="text-2xl font-semibold flex items-center gap-2">
-            {title} <FaGithub />
+          <h3 className="text-2xl font-semibold">
+            {title}{" "}
+            <a href={github} target="_blank" rel="noopener noreferrer">
+              <FaGithub className="cursor-pointer transition-all focus:scale-110 hover:scale-110 inline-block ml-2" />
+            </a>
+            <a href={live} rel="noopener noreferrer" target="_blank">
+              <FaExternalLinkAlt className="cursor-pointer transition-all focus:scale-110 hover:scale-110 text-xl ml-2 inline-block" />
+            </a>
           </h3>
+
           <p className="mt-2 leading-relaxed text-gray-700 mb-6">
             {description}
           </p>
+
           <ul className="flex flex-wrap gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li

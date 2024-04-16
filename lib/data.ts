@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import proshop from "@/public/Proshop.png";
+import newsapp from "@/public/news app.png";
+import fyp from "@/public/FYP.png";
 
 export const links = [
   {
@@ -68,14 +68,18 @@ export const projectsData = [
     description:
       "I recreated 'The 961' news website using Next.js 14 and Tailwind CSS. By leveraging newsapi.org, I fetched real-time news articles for a seamless user experience.",
     tags: ["Next.js", "Tailwind CSS", "NewsAPI"],
-    imageUrl: corpcommentImg,
+    imageUrl: newsapp,
+    github: "https://github.com/charbel-ayrouth/news-app",
+    live: "https://the-961-clone.vercel.app/",
   },
   {
     title: "Proshop",
     description:
-      "I a full-stack MERN application serving as an ecommerce platform. Featuring a comprehensive shopping cart and Stripe integration for seamless payments,",
+      "Developed a full-stack MERN application serving as an ecommerce platform. Featuring a comprehensive shopping cart and Stripe integration for seamless payments,",
     tags: ["React", "Redux Toolkit", "Stripe", "Node.js", "Express", "MongoDB"],
-    imageUrl: rmtdevImg,
+    imageUrl: proshop,
+    github: "https://github.com/charbel-ayrouth/proshop",
+    live: "https://proshop-tev6.onrender.com/",
   },
   {
     title: "FYP Proposal Management System",
@@ -89,7 +93,9 @@ export const projectsData = [
       "Express",
       "MongoDB",
     ],
-    imageUrl: wordanalyticsImg,
+    imageUrl: fyp,
+    github: "https://github.com/charbel-ayrouth/FYP-frontend",
+    live: "https://fyp-schedule.onrender.com/",
   },
 ] as const;
 
