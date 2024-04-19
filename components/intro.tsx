@@ -70,7 +70,7 @@ export default function Intro() {
         </Link>
 
         <a
-          href="/CV.pdf"
+          href="/Charbel Ayrouth Resume.pdf"
           download={true}
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack">
           Download CV{" "}
@@ -78,13 +78,17 @@ export default function Intro() {
         </a>
 
         <a
-          href=""
+          href="http://linkedin.com/in/charbel-ayrouth"
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-white p-4 text-gray-700 flex items-center rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack">
           <BsLinkedin />
         </a>
 
         <a
-          href=""
+          href="https://github.com/charbel-ayrouth"
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-white p-4 text-gray-700 flex items-center rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack">
           <FaGithubSquare />
         </a>

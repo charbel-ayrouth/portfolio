@@ -38,13 +38,12 @@ export const experiencesData = [
     title: "Web Developer Intern",
     location: "BtekUp (Remote)",
     description:
-      // "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
       "I worked on a full-stack project for three months, utilizing React.js, SCSS, Node.js (Express), and MongoDB.",
     icon: React.createElement(FaReact),
     date: "Summer 2022",
   },
   {
-    title: "Support Engineer",
+    title: "VAS Support Engineer",
     location: "MobiMind (Beirut)",
     description:
       "I provided technical support to service providers. I used SQL Server Management Studio, Postman, Skype, and Outlook in my work.",
@@ -56,7 +55,6 @@ export const experiencesData = [
     location: "Antonine University",
     description:
       "I graduated with a Bachelor of Engineering in Computer and Communications Engineering (CCE) with a focus in Software Engineering and Networks.",
-    //   "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(LuGraduationCap),
     date: "Summer 2023",
   },
